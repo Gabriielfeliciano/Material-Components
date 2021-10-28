@@ -1,0 +1,31 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="sidenav.open()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>face</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-sidenav-container
+    class="example-container" (backdropClick)="close()">
+  <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
+    <mat-selection-list class="list-content" [multiple]="false">
+        <mat-list-option>
+            <p href="#" class="w-100 text-center">Item 01</p>
+        </mat-list-option>
+        <mat-list-option>
+            Item 02
+            </mat-list-option>
+            <mat-list-option>
+            Item 03
+            </mat-list-option>
+        </mat-selection-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
