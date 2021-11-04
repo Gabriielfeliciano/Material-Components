@@ -6,7 +6,7 @@
 
 ## ⚙️ Executando o projeto
 
-Abra o terminal no caminho dessa pasta e instale as dependências:
+Abra o seu terminal no caminho dessa pasta e instale as dependências:
 ```
 npm install
 ```
