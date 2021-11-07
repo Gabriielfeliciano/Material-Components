@@ -1,31 +1,34 @@
 <mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="sidenav.open()">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
         <mat-icon>menu</mat-icon>
     </button>
-    <span>My App</span>
+    <span>Components Material</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <button mat-icon-button class="example-icon">
+        <mat-icon matBadge="3" matBadgeColor="warn">notifications</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon">
         <mat-icon>face</mat-icon>
     </button>
 </mat-toolbar>
 
-<mat-sidenav-container
-    class="example-container" (backdropClick)="close()">
-  <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
-    <mat-selection-list class="list-content" [multiple]="false">
-        <mat-list-option>
-            <p href="#" class="w-100 text-center">Item 01</p>
-        </mat-list-option>
-        <mat-list-option>
-            Item 02
+  <mat-drawer-container class="example-container" [hasBackdrop]="false">
+    <mat-drawer #drawer mode="push">
+        <mat-selection-list class="list-content" [multiple]="false">
+            <mat-list-option>
+                <p class="w-100 text-center"> Item 01</p>
             </mat-list-option>
             <mat-list-option>
-            Item 03
+                Item 02
+            </mat-list-option>
+            <mat-list-option>
+                Item 03
             </mat-list-option>
         </mat-selection-list>
-  </mat-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <ng-content></ng-content>
+    </mat-drawer-content>
+  </mat-drawer-container>
 
-  <mat-sidenav-content>
 
-  </mat-sidenav-content>
-</mat-sidenav-container>

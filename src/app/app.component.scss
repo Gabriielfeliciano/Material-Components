@@ -1,0 +1,12 @@
+.example-container {
+    height: 95vh;
+    display: flex;
+}
+.list-content{
+width: 20vw;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+    height: 5vh;
+}
