@@ -14,8 +14,4 @@ export class MenuComponent implements OnInit {
   }
   @ViewChild('sidenav') sidenav!: MatSidenav;
 
-  close() {
-    this.sidenav.close();
-  }
-
 }

@@ -2,15 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatIconModule} from '@angular/material/icon';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './_components/components.module';
+import { TreeComponent } from './pages/tree/tree.component';
+import { MaterialModules } from './modules/material.modules';
+import { ButtonsComponent } from './pages/buttons/buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    TreeComponent,
+    ButtonsComponent,
 
   ],
   imports: [
@@ -18,7 +21,8 @@ import { ComponentsModule } from './_components/components.module';
     AppRoutingModule,
     ComponentsModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MaterialModules
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
