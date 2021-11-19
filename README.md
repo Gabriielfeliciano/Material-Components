@@ -1,7 +1,7 @@
 <h1 align="center">Projeto de Componentes do Angular Material</h1>
 
 <h4 align="center"> 
-	🚧  Projeto de Componentes do Angular Material 🚀 Em construção...  🚧
+	🚧  Projeto de Componentes do Angular Material 👨🏽‍💻 Em construção...  🚧
 </h4>
 
 ## ⚙️ Executando o projeto
