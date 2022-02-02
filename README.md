@@ -6,6 +6,9 @@
 
 ## ⚙️ Executando o projeto
 
+Requisitos:
+Tenha o Node.js instalado na sua máquina.
+
 Abra o seu terminal e instale as dependências:
 ```
 npm install
